@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^(.*).html$ $1.php [L]
+
+#ErrorDocument 404 http://localhost/halltec/sorry.php
+
+
+
