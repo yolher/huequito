@@ -1,46 +1,106 @@
 header
 {
-	width: 1124px;
+	width: 100%;
 	border: 1px solid #f00;
+	margin: auto;
+	background: #1a2933;
+}
+#up
+{
+	width: 100%;
+	height: 50px;
+	background: #041019;
+}
+#lnb
+{
+	width: 1070px;
 	margin: auto;
 }
 #logo
+{
+	width: 20%;
+	height: 100px;
+	border: 1px solid #f00;
+	display: inline-block;
+	vertical-align: top;
+}
+#buscador
 {
 	width: 30%;
 	height: 100px;
 	border: 1px solid #f00;
 	display: inline-block;
-}
-#buscador
-{
-	width: 65%;
-	height: 100px;
-	border: 1px solid #f00;
-	display: inline-block;
+	vertical-align: top;
 }
 nav
 {
-	width: 100%;
+	width: 48%;
 	height: 50px;
 	border: 1px solid #f00;
+	display: inline-block;
+	vertical-align: top;
+}
+nav ul 
+{
+	list-style: none
+}
+nav ul li 
+{
+	display: inline-block;
 }
 #container
 {
 	width: 1124px;
-	height: 500px;
 	border: 1px solid #f00;
 	margin: auto;
 }
 #banner
 {
 	width: 100%;
-	height: 100px;
+	height: 470px;
+	margin-top: 35px;
+	border: 1px solid #f00;
+}
+#categorias
+{
+	margin-top: 43px;
+	width: 100%;
+}
+.contcat
+{
+	width: 370px;
+	height: 185px;
+	border: 1px solid #f00;
+	display: inline-block;
+}
+#productos
+{
+	width: 100%;
+	margin-top: 100px;
+	border: 1px solid #f00;
+}
+.prod
+{
+	width: 270px;
+	border: 1px solid #f00;
+}
+.imagen
+{
+	width: 100%;
+	height:346px;
+	border: 1px solid #f00;
+}
+.descripcion
+{
+	width: 270px;
+	height:50px;
 	border: 1px solid #f00;
 }
 footer
 {
-	width: 1124px;
-	height: 400px;
+	width: 100%;
+	height: 360px;
 	margin: auto;
+	background: #192430;
 	border: 1px solid #f00;
 }

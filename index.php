@@ -17,23 +17,48 @@
 
 <body class="home" id="Inicio">
 	<header>
+		<div id="up">
+
+			
+		</div>
+		<div id="lnb">
 		<div id="logo">
 			
 		</div>
+		<nav>
+			<ul>
+				<li>Inicio</li>
+				<li>Productos</li>
+				<li>Nosotros</li>
+				<li>Coctactanos</li>
+			</ul>
+		</nav>
 		<div id="buscador">
 			
 		</div>
-		<nav>
-			
-		</nav>
-		
+		</div>
 	</header>
 
 	<div id="container">
 		<section id="banner">
 			
 		</section>
+		<section id="categorias">
+			<div class="contcat"></div>
+			<div class="contcat"></div>
+			<div class="contcat"></div>
+		</section>
+
 		<section id="productos">
+			<div class="prod">
+				<div class="imagen">
+					
+				</div>
+				<div class="descripcion">
+					
+				</div>
+
+			</div>
 			
 		</section>
 		
