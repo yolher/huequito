@@ -23,10 +23,22 @@ header
 	border: 0px solid #f00;
 
 }
+#Cmenu
+{
+	width: 30px;
+	display: none;
+	border: 0px solid #f00;
+}
+#Cmenu img{
+	display: block;
+	width: 100%;
+}
 #redes
 {
 	width: 30%;
-	
+	border: 0px solid #f00;
+	display: inline-block;
+	vertical-align: top;
 }
 #redes ul
 {
@@ -34,7 +46,6 @@ header
 }
 #redes ul li
 {
-	
 	display: inline-block;
 	padding-left: 10px;
 }
@@ -200,18 +211,87 @@ nav ul li.menu:hover ul
 footer
 {
 	width: 100%;
-	height: 360px;
 	margin: auto;
 	background: #192430;
+	padding-bottom: 20px;
 	border: 0px solid #f00;
 }
 #contenidof
 {
 	width: 1124px;
-	height: 250px;
 	margin: auto;
 	margin-top: 27px;
 
+}
+.contfoo
+{
+	width: 24%;
+	display: inline-block;
+	vertical-align: top;
+	border: 0px solid #f00;
+}
+.contfoo h1
+{
+	font-size: 14px;
+	color: #fff;
+	margin-top: 28px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+.contfoo h2
+{
+	font-size: 14px;
+	color: #fff;
+	width: 70%;
+	margin-top: 62px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	margin-left: 20px;
+	border-bottom: 2px solid #465c71;
+}
+.contfoo img 
+{
+	display: block;
+	margin-top: 36px;
+}
+.contfoo p 
+{
+	margin-top: 10px;
+	color: #465c71;
+	font-size: 12px;
+}
+.contfoo ul
+{
+	list-style: none;
+	padding: 0px;
+	margin-left: 20px;
+}
+
+.contfoo ul li img 
+{
+	display: block;
+	margin-top: 0px;
+	display: inline-block;	
+}
+.contfoo ul li p 
+{
+	display: inline-block;
+	padding-left: 10px;
+}
+.contfoo ul#redesfo
+{
+	margin-top: 15px;
+}
+.contfoo ul#redesfo li p
+{
+	vertical-align: top;
+}
+#mas
+{
+	width: 90px;
+	height: 32px;
+	margin-top: 30px;
+	background: #465c71;
 }
 #derechosf
 {
@@ -219,4 +299,10 @@ footer
 	height: 50px;
 	margin-top: 27px;
 	background: #0e1319;
+	border: 0px solid #f00;
+}
+#dereta 
+{
+	width: 1124px;
+	margin: auto;
 }

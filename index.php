@@ -21,6 +21,11 @@
 	<header>
 		<div id="up">
 			<div id="varios">
+				<div id="Cmenu">
+					<a href="#" class="control" >
+						<img src="images/menu.png">
+					</a>
+				</div>
 				<div id="redes">
 					<ul>
 						<li><img src="images/contacto.png" alt=""></li>
@@ -35,7 +40,7 @@
 				<div id="logo">
 					<img src="images/logo.png" alt="">
 				</div>
-				<nav>
+				<nav >
 					<ul>
 						<a href=""><li class="menu">INICIO</li></a>
 						<a href=""><li class="menu">CONOSCANOS</li></a>
@@ -204,10 +209,48 @@
 	</div>
 	<footer>
 			<div id="contenidof">
+				<div class="contfoo">
+					<h1>SOBRE NOSOTROS</h1>
+					<img src="images/logo.png" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla.</p>
+					<div id="mas">
+					</div>
+				</div>
+				<div class="contfoo">
+					<h2>CATEGORIAS</h2>
+					<ul>
+						<li><img src="images/separador.png" alt=""><p>123123</p></li>
+						<li><img src="images/separador.png" alt=""><p>123123</p></li>
+						<li><img src="images/separador.png" alt=""><p>123123</p></li>
+						<li><img src="images/separador.png" alt=""><p>123123</p></li>
+						<li><img src="images/separador.png" alt=""><p>123123</p></li>
+						<li><img src="images/separador.png" alt=""><p>123123</p></li>
+					</ul>
+				</div>
+				<div class="contfoo">
+					<h2>INFORMACION</h2>
+					<ul>
+						<li><img src="images/separador.png" alt=""><p>123123</p></li>
+						<li><img src="images/separador.png" alt=""><p>123123</p></li>
+						<li><img src="images/separador.png" alt=""><p>123123</p></li>
+						<li><img src="images/separador.png" alt=""><p>123123</p></li>
+						<li><img src="images/separador.png" alt=""><p>123123</p></li>
+						<li><img src="images/separador.png" alt=""><p>123123</p></li>
+					</ul>
+				</div>
+				<div class="contfoo">
+					<h2>SIGANOS</h2>
+					<ul id="redesfo">
+					<li><img src="images/facebookf.png" alt=""><p>Facebook</p></li>
+					<li><img src="images/twitterf.png" alt=""><p>Twitter</p></li>
+					</ul>
+				</div>
 				
 			</div>
 			<div id="derechosf">
-				
+				<div id="dereta">
+					
+				</div>
 			</div>
 	</footer>
 

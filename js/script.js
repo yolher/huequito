@@ -1,13 +1,11 @@
-$(document).on("ready",function(){
+var x = jQuery.noConflict();
+x(document).on("ready",function(){
 	//=============================================================================
-	$(".ilustra").hover(function() {
-    	$( this ).addClass("animated pulse");
-  	},function(){
-    	$( this ).removeClass( "animated pulse");
-  	});
+		x("a.control").toggle(function(){
+		x("nav ul").fadeIn(200);
+	},function(){
+		x("nav ul").fadeOut(200);
+	})
 	
-});
 
-$(function(){
-	main.init();
 });
