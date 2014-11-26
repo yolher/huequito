@@ -1,0 +1,60 @@
+@media screen and (max-width: 1100px){
+	#container{width: 100%;}
+	nav{width: 60%;}
+	#logo{width: 35%}
+	#buscador{
+		margin: auto;
+		display: block;
+		margin-top: 0px;
+		width: 70%;
+	}
+	#lnb{width: 100%;
+		padding-bottom: 10px;}	
+	#varios{width: 100%;}	
+	#contenidof{width: 100%;}
+	.prod{width: 23%;}
+
+}
+@media screen and (max-width: 850px){
+	#logo{width: 100%;
+	}
+	nav{width: 500px;
+		display: block;
+		margin: auto;
+		margin-top: 0px;
+		}
+	.contcat
+	{
+		width: 32%;
+	}
+	.prod{width: 32%;}
+}
+@media screen and (max-width: 700px){
+	.prod{width: 48%;}
+	#productos{width: 88%;
+		margin: auto;}
+	}
+@media screen and (max-width: 500px){
+	nav
+	{
+		display: none;
+	}
+
+	#redes
+	{
+		width: 50%;
+		margin: auto;
+	}
+	#buscador
+	{
+		width: 90%;
+	}
+	.contcat
+	{
+		display: block;
+		margin: auto;
+		width: 300px;
+	}
+	.prod{width: 100%;}
+	#productos{width: 270px;
+}
