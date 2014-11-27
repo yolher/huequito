@@ -2,6 +2,11 @@
 {
 	margin:0px;
 }
+body{
+	background: url(../images/content-bg.gif) 160px 0px repeat-x;
+}
+
+
 header
 {
 	width: 100%;
@@ -170,7 +175,6 @@ nav ul li ul li:hover{
 
 body.internal #container{
 	width: 1024px;
-	border: 1px solid #f00;
 }
 
 section#contenido{
@@ -189,6 +193,80 @@ section#right{
 	margin: 10px auto 0px auto;
 }
 
+.titlePage{
+	width: 100%;
+	border-bottom: 2px solid #1a2933;
+}
+
+.titlePage h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 34px;
+	font-weight: 400;
+	color: #1a2933;
+}
+
+section#contenido #categories,
+section#contenido #items{
+	margin: 20px auto;
+}
+
+#categories .itemBloock{
+	width: 32%;
+	margin: 10px 3px;
+	vertical-align: top;
+	border: 1px solid #ededed;
+	background: #fff;
+	display: inline-block;
+	
+}
+
+.itemBloock .titulo{
+	min-height: 70px;
+	text-align: center;
+	margin: 10px 0px 0px 0px;
+}
+
+.itemBloock .titulo a{
+	font-family: 'Open Sans', sans-serif;
+	padding: 5px;	
+	font-size: 18px;
+	color: #ed8641;
+	font-weight: 400;
+	text-decoration: none;	
+}
+
+.itemBloock .image{
+	margin: 10px 0px;
+}
+
+.itemBloock .image img{
+	width: 100%;
+}
+
+.itemBloock .descripcion p{
+	width: 95%;
+	margin: 0px auto;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+.itemBloock .readMore{
+	width: 100px;
+	height: 40px;
+	margin: 10px;
+	background: #1a2933;
+	float: right;
+}
+
+.itemBloock .readMore a{
+	color: #ed8641;
+	font-family: arial;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	text-decoration: none;
+	line-height: 40px;
+}
 
 
 #container
@@ -224,35 +302,48 @@ section#right{
 {
 	width: 100%;
 }
-#productos
-{
+
+.moduletitle {
 	width: 100%;
-	margin: 10px 0px 0px 0px;
+	border-bottom: 2px solid #1a2933;
+}
+
+section#productos h3{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 34px;
+	font-weight: 400;
+	color: #1a2933;
+}
+
+
+section#productos{
+	width: 100%;
+	margin: 30px 0px 0px 0px;
 	border: 0px solid #f00;
 }
-#productos img 
-{
-	display: block;
-	height: auto;
-}
-.prod
-{
+
+section#productos .prod{
 	width: 24%;
 	display: inline-block;
 	margin-right: 6px;
 	vertical-align: top;
-	margin-top: 50px;
+	margin-top: 20px;
 	border: 0px solid #f00;
 }
-.imagen
-{
+
+section#productos .imagen img {
+	display: block;
+	height: auto;
+}
+
+section#productos .imagen{
 	width: 100%;
 	height: 345px;
 	overflow: hidden;
 	border: 0px solid #f00;
 }
-.descripcion
-{
+
+section#productos  .descripcion{
 	width: 270px;
 	padding:20px 0px 20px 0px;
 	min-height:50px;
@@ -260,12 +351,15 @@ section#right{
 	border: 0px solid #f00;
 	border-bottom: 1px solid #e8e8e8;
 }
-.descripcion p 
-{
+
+section#productos .descripcion p{
 	width: 85%;
 	display: block;
 	color: #ed8641;
 }
+
+
+
 footer
 {
 	width: 100%;

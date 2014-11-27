@@ -3,6 +3,8 @@
 	require_once("modules/mod_slide/default.php");
 	require_once("modules/mod_productos/default.php");
 	require_once("modules/mod_content/default.php");
+		//-- trae el nombre de la pagina
+	$pagina = $_GET["id_menu"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,10 +69,16 @@
 	</header>
 
 	<div id="container">
-		<?php 
-			//-- funcion para presentar la informacion
-			//displayInfo($_GET["id"]);
-		?>
+		<section id="contenido">
+			<div class="titlePage">
+				<h1><?php //echo ucwords($pagina); ?></h1>
+			</div>
+			
+		</section>
+
+		<section id="right">
+		
+		</section>
 	</div>
 
 	<footer>

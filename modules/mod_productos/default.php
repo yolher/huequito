@@ -15,7 +15,7 @@
                 </div>
                 <div class="descripcion">
                     <p>
-                    <?php echo substr(strip_tags($productos[$i]['desc_ent']),0,60).'...'; ?>
+                    <?php echo substr(strip_tags($productos[$i]['titulo_ent']),0,60).'...'; ?>
                     </p>
                 </div>
             </div>

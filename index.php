@@ -82,11 +82,14 @@
 		</section>
 
 		<section id="productos">
+			<div class="moduletitle">
+				<h3>Ùltimos Productos</h3>
+			</div>
 			<?php displayProductos(); ?>	
 		</section>
 		
 	</div>
-	
+
 	<footer>
 			<div id="contenidof">
 				<div class="contfoo">

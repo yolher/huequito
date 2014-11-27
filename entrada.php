@@ -70,6 +70,9 @@
 
 	<div id="container">
 		<section id="contenido">
+			<div class="titlePage">
+				<h1><?php echo ucwords($pagina); ?></h1>
+			</div>
 			<?php displayInfo($pagina); ?>
 		</section>
 
