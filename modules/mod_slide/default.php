@@ -11,7 +11,7 @@
           $carpeta = "server/php/files/".$getSlide[0]["image_sl"];
 
           $filehandle = opendir($carpeta); // Abrir archivos
-            
+            echo "<div id='slides'>";
               while ($file = readdir($filehandle)) {
                       if ($file != "." && $file != ".." && $file != "." && $file != "Thumbs.db") {
                         $tamanyo = GetImageSize($carpeta .'/'. $file); 
@@ -20,7 +20,8 @@
                         //echo $imagen="<li><a href='".$foto."'><img src='".$foto."'></a></li>";  
                       } 
               } 
-              closedir($filehandle); // Fin lectura archivos           
+              closedir($filehandle); // Fin lectura archivos  
+            echo "</div>";         
           }
 
       }

@@ -1,7 +1,8 @@
-<?php require_once("modules/mod_menu/default.php");
-		require_once("modules/mod_slide/default.php");
-		require_once("modules/mod_productos/default.php");
- ?>
+<?php 
+	require_once("modules/mod_menu/default.php");
+	require_once("modules/mod_slide/default.php");
+	require_once("modules/mod_productos/default.php");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,10 +18,10 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<script src="js/jquery-1.7.2.min.js"></script>
 	<script src="js/prefixfree.min.js"></script>
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/stylebanner.css">
-    <script src="js/jquery.slides.min.js"></script>
-    	<script src="js/script.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<script src="js/script.js"></script>
+  	<link rel="stylesheet" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/stylebanner.css">    
 </head>
 
 
@@ -56,7 +57,9 @@
 		</div>
 			<div id="lnb">
 				<div id="logo">
-					<img src="images/logo.png" alt="">
+					<a href="index.php">
+						<img src="images/logo.png" alt="">
+					</a>
 				</div>
 				<nav >
 					<?php displayMenus(); ?>
@@ -65,14 +68,11 @@
 			</div>
 	</header>
 
-	<div id="container">
-		
+	<div id="container">	
 
-	<section id="banner">		
-    	<div id="slides">
-      		<?php displayslide(); ?>	
-    	</div>		
-	</section>
+		<section id="banner">    		
+      		<?php displayslide(); ?>    			
+		</section>
 			
 
 		<section id="categorias">
@@ -86,6 +86,7 @@
 		</section>
 		
 	</div>
+	
 	<footer>
 			<div id="contenidof">
 				<div class="contfoo">
