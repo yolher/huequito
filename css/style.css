@@ -71,67 +71,86 @@ header
 }
 #buscador
 {
-	width: 27%;
-	margin-top: 30px;
-	display: inline-block;
-	vertical-align: top;
+	float: right;
 }
 #into
 {
 	width: 73%;
-	height: 30px;
+height: 30px;
+border: none;
+padding: 0px 0px 0px 5px;
 }
 #boton
 {
 	width: 23%;
-	height: 36px;
+	height: 30px;
+	font-size: 14px;
 	border: none;
 	color: #fff;
-	background: #10171f;
+	background: #1a2933;
 	vertical-align: top;
 }
 nav
 {
-	width: 48%;
-	height: 50px;
-	margin-top: 40px;
-	border: 0px solid #f00;
+	width: 58%;
+	height: 32px;
+
 	display: inline-block;
 	vertical-align: top;
+	margin: 40px 0px 0px 0px;
+	line-height: 32px;
+	float: right;
 }
 nav ul 
 {
 	list-style: none;
 	width:100%;
 }
+
+nav ul li 
+{
+	border:0px solid;
+	padding: 0px 5px;
+	margin: 0px 10px;
+	display: inline-block;	
+	border-radius: 4px;
+}
+
+nav ul li:hover{
+	background: #a3b9d1;
+	transition: 0.5s all;
+}
+
+nav ul li:hover a{
+	color: #000;
+}
+
+
 nav ul li a
 {
 	text-decoration: none;
 	color: #a3b9d1;
+	font-family: 'Open Sans', sans-serif;
 }
+
+
 nav ul li ul
 {
 	position: absolute;
-	width: 100px;
-	background: #10171f;
-	z-index: 99999;
+	width: 200px;
 	display: none;
+	z-index: 99999;
+	margin: 0px;
+	padding: 0px;
+	
 
 }
-nav ul li 
-{
-	font-size: 11px;
-	border:0px solid;
-	color: #a3b9d1;
-	padding-right: 15px;
-	font-weight: bold;
-	display: inline-block;
-	transition: 5s all;
-}
+
 nav ul li ul li 
 {
-	height: 20px;
-	font-size: 11px;
+	display: block;
+	background: #10171f;
+	transition: 0.5s all;
 }
 nav ul li:hover ul
 {
@@ -139,6 +158,15 @@ nav ul li:hover ul
 	transition: 5s all;
 }
 
+nav ul li ul li a{
+	display: block;
+	color: #a3b9d1!important;
+}
+
+nav ul li ul li:hover{
+	background: #112E41;
+	transition: 0.5s all;
+}
 
 #container
 {
@@ -313,4 +341,30 @@ footer
 {
 	width: 1124px;
 	margin: auto;
+}
+
+.grid1{
+	width: 100%;
+	min-height: 30px;
+
+	vertical-align: top;
+}
+.grid2{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px 0px 0px 0px;
+
+}
+.grid3{
+	width: 32.5%;
+	min-height: 30px;
+	display: inline-block;
+	vertical-align: top;
+}
+.grid4{
+	width: 24.2%;
+	min-height: 30px;
+	display: inline-block;
+	vertical-align: top;
 }
