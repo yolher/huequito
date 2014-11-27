@@ -28,18 +28,29 @@
 	<header>
 		<div id="up">
 			<div id="varios">
-				<div id="Cmenu">
-					<a href="#" class="control" >
-						<img src="images/menu.png">
-					</a>
+				<div class="grid2">
+					
+					<div id="Cmenu">
+						<a href="#" class="control" >
+							<img src="images/menu.png">
+						</a>
+					</div>
+					<div id="redes">
+						<ul>
+							<li><img src="images/contacto.png" alt=""></li>
+							<li><img src="images/correo.png" alt=""></li>
+							<li><img src="images/facebook.png" alt=""></li>
+						</ul>
+					</div>
+					
 				</div>
-				<div id="redes">
-					<ul>
-						<li><img src="images/contacto.png" alt=""></li>
-						<li><img src="images/correo.png" alt=""></li>
-						<li><img src="images/facebook.png" alt=""></li>
-					</ul>
+				<div class="grid2">
+					<div id="buscador">
+						<input id="into" type="text" placeholder="Buscar" class="hasPlaceholder">
+						<input type="button" id="boton" value="Buscar">
+					</div>
 				</div>
+				
 			</div>
 			
 		</div>
@@ -50,10 +61,7 @@
 				<nav >
 					<?php displayMenus(); ?>
 				</nav>
-				<div id="buscador">
-					<input id="into" type="text" placeholder="Buscar" class="hasPlaceholder">
-					<input type="button" id="boton" value="Buscar">
-				</div>
+				
 			</div>
 	</header>
 

@@ -11,12 +11,13 @@
 		function content($item){
 			//echo count($item);
 			for ($i=0; $i < count($item); $i++) { 
-
+				$nombre = strtolower($item[$i]["titulo_ent"]);
+				$nombreUrl = str_replace(" ", "-", $nombre);
 				echo '<div class="item">
 						<div class="titulo">'.$item[$i]["titulo_ent"].'</div>
 						<div class="image"><img src="server/php/files/'.$item[$i]["image_ent"].'" width="100px"></div>
 						<div class="descripcion">'.$item[$i]["desc_ent"].'</div>
-						<div class="readMore"><a href="content-'.$item[$i]["id_entry"].'.html">Leer Más</a></div>
+						<div class="readMore"><a href="content/'.$nombreUrl."-".$item[$i]["id_entry"].'.html">Leer Más</a></div>
 				</div>';
 			}
 		}
