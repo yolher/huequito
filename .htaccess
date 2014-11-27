@@ -1,8 +1,17 @@
 RewriteEngine On
 
-RewriteRule ^(.*).html$ $1.php [L]
+#ErrorDocument 404 http://www.santacruzfincaraiz.com/sorry.php
 
-#ErrorDocument 404 http://localhost/halltec/sorry.php
+RewriteRule ^([a-zA-Z0-9_-]+)$ entrada.php?id=$1 [last]
+#RewriteRule ^.*/\$ entrada.php?id=$1 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ content.php?id_menu=$1 [last]
+RewriteRule ^.*content/([0-9]+)\.html$ content.php?id_menu=$1 [L]
+
+#RewriteRule ^entrada/(\w+)/?$ entrada.php?id=$1
+
+
+
 
 
 

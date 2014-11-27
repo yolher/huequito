@@ -109,15 +109,16 @@ nav ul li a
 	text-decoration: none;
 	color: #a3b9d1;
 }
-nav ul li.menu ul
+nav ul li ul
 {
 	position: absolute;
 	width: 100px;
 	background: #10171f;
 	z-index: 99999;
 	display: none;
+
 }
-nav ul li.menu 
+nav ul li 
 {
 	font-size: 11px;
 	border:0px solid;
@@ -125,16 +126,19 @@ nav ul li.menu
 	padding-right: 15px;
 	font-weight: bold;
 	display: inline-block;
+	transition: 5s all;
 }
-nav ul li.submenu 
+nav ul li ul li 
 {
 	height: 20px;
 	font-size: 11px;
 }
-nav ul li.menu:hover ul
+nav ul li:hover ul
 {
 	display: block;
+	transition: 5s all;
 }
+
 
 #container
 {
@@ -178,19 +182,23 @@ nav ul li.menu:hover ul
 }
 #productos img 
 {
-	width: 100%;
+	display: block;
+	height: auto;
 }
 .prod
 {
 	width: 24%;
 	display: inline-block;
 	margin-right: 6px;
+	vertical-align: top;
 	margin-top: 50px;
 	border: 0px solid #f00;
 }
 .imagen
 {
 	width: 100%;
+	height: 345px;
+	overflow: hidden;
 	border: 0px solid #f00;
 }
 .descripcion
