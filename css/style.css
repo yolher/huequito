@@ -168,16 +168,38 @@ nav ul li ul li:hover{
 	transition: 0.5s all;
 }
 
+body.internal #container{
+	width: 1024px;
+	border: 1px solid #f00;
+}
+
+section#contenido{
+	width: 74%;
+	display:inline-block;
+	vertical-align: top;
+	margin: 10px auto 0px auto;
+}
+
+section#right{
+	background: #1a2933;
+	width: 25%;
+	display:inline-block;
+	vertical-align: top;
+	min-height: 300px;
+	margin: 10px auto 0px auto;
+}
+
+
+
 #container
 {
-	width: 1124px;
-	border: 0px solid #f00;
-	margin: auto;
+	width: 1124px;	
+	margin: 0px auto;
 }
 #banner
 {
 	width: 100%;
-	margin-top: 35px;
+	margin: 0px 0px 0px 0px;
 	border: 0px solid #f00;
 }
 #slides
@@ -187,7 +209,7 @@ nav ul li ul li:hover{
 }
 #categorias
 {
-	margin-top: 43px;
+	margin: 20px 0px 0px 0px;
 	width: 100%;
 	border: 0px solid #f00;
 }
@@ -205,7 +227,7 @@ nav ul li ul li:hover{
 #productos
 {
 	width: 100%;
-	margin-top: 100px;
+	margin: 10px 0px 0px 0px;
 	border: 0px solid #f00;
 }
 #productos img 

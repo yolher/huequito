@@ -23,7 +23,7 @@
   	<link rel="stylesheet" href="css/font-awesome.min.css">
   	<link rel="stylesheet" href="css/stylebanner.css">    
 </head>
-<body class="home" id="Inicio">
+<body class="internal" id="Inicio">
 	<header>
 		<div id="up">
 			<div id="varios">

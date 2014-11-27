@@ -3,12 +3,14 @@
 	require_once("modules/mod_slide/default.php");
 	require_once("modules/mod_productos/default.php");
 	require_once("modules/mod_content/default.php");
+	//-- trae el nombre de la pagina
+	$pagina = $_GET["id"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Huequito</title>
+	<title>Huequito :: <?php echo ucwords($pagina); ?></title>
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mediaQueries.css">
@@ -23,7 +25,7 @@
   	<link rel="stylesheet" href="css/font-awesome.min.css">
   	<link rel="stylesheet" href="css/stylebanner.css">    
 </head>
-<body class="home" id="Inicio">
+<body class="internal <?php echo $pagina; ?>" id="Inicio">
 	<header>
 		<div id="up">
 			<div id="varios">
@@ -67,10 +69,13 @@
 	</header>
 
 	<div id="container">
-		<?php 
-			//-- funcion para presentar la informacion
-			displayInfo($_GET["id"]);
-		?>
+		<section id="contenido">
+			<?php displayInfo($pagina); ?>
+		</section>
+
+		<section id="right">
+		
+		</section>
 	</div>
 
 	<footer>
