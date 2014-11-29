@@ -2,6 +2,7 @@
 	require_once("modules/mod_menu/default.php");
 	require_once("modules/mod_slide/default.php");
 	require_once("modules/mod_productos/default.php");
+	require_once("modules/mod_category_front/default.php");
 ?>
 
 <!DOCTYPE html>
@@ -76,9 +77,7 @@
 			
 
 		<section id="categorias">
-			<div class="contcat"><a href=""><img src="images/categoria1.png" alt=""></a></div>
-			<div class="contcat"><a href=""><img src="images/categoria2.png" alt=""></a></div>
-			<div class="contcat"><a href=""><img src="images/categoria3.png" alt=""></a></div>
+			<?php displayCategoriesFront(); ?>
 		</section>
 
 		<section id="productos">
