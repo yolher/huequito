@@ -1,8 +1,6 @@
 <?php 
 	require_once("modules/mod_menu/default.php");
-	require_once("modules/mod_slide/default.php");
-	require_once("modules/mod_productos/default.php");
-	require_once("modules/mod_content/default.php");
+	require_once("modules/mod_content_int/default.php");
 	require_once("modules/mod_ultimos/default.php");
 		//-- trae el nombre de la pagina
 	$pagina = $_GET["id_menu"];
@@ -13,6 +11,7 @@
 	<meta charset="UTF-8">
 	<title>Huequito</title>
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mediaQueries.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -71,14 +70,12 @@
 
 	<div id="container">
 		<section id="contenido">
-			<div class="titlePage">
-				<h1><?php //echo ucwords($pagina); ?></h1>
-			</div>
 			
+			<?php displayInfoInternal($pagina); ?>
 		</section>
 
 		<section id="right">
-		<h1>Ultimos Productos</h1>
+			<h1>Ultimos Productos</h1>
 			<?php displayUltimo(); ?>	
 		</section>
 	</div>

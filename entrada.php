@@ -1,7 +1,5 @@
 <?php 
 	require_once("modules/mod_menu/default.php");
-	require_once("modules/mod_slide/default.php");
-	require_once("modules/mod_productos/default.php");
 	require_once("modules/mod_content/default.php");
 	require_once("modules/mod_ultimos/default.php");
 	//-- trae el nombre de la pagina
@@ -13,6 +11,7 @@
 	<meta charset="UTF-8">
 	<title>Huequito :: <?php echo ucwords($pagina); ?></title>
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mediaQueries.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">

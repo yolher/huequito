@@ -225,7 +225,7 @@ section#right{
 #desultimos
 {
 	width: 80%;
-	margin:auto;
+	margin: -44px auto 0px auto;
 	position: relative;
 	z-index: 9999;
 	background-color: rgba(36,36,36,0.8);
@@ -250,6 +250,31 @@ section#right{
 	font-size: 34px;
 	font-weight: 400;
 	color: #1a2933;
+}
+
+#mainItem{
+	width: 98%;
+	margin: 20px auto;
+}
+
+#mainItem .itemImage{
+	float: left;
+	width: 350px;
+}
+
+#mainItem .desc p{
+	font-family: 'Open Sans', sans-serif;
+	color: #7f7f7f;
+	line-height: 22px;
+	font-size: 16px;
+}
+
+#mainItem .itemImage img{
+	display: block;
+	width: 90%;
+	margin: 0px auto;
+	padding:  5px;
+	border: 1px solid #c1c1c1;
 }
 
 section#contenido #categories,
