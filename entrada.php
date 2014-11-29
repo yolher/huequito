@@ -3,6 +3,7 @@
 	require_once("modules/mod_slide/default.php");
 	require_once("modules/mod_productos/default.php");
 	require_once("modules/mod_content/default.php");
+	require_once("modules/mod_ultimos/default.php");
 	//-- trae el nombre de la pagina
 	$pagina = $_GET["id"];
 ?>
@@ -77,7 +78,8 @@
 		</section>
 
 		<section id="right">
-		
+			<h1>Ultimos Productos</h1>
+			<?php displayUltimo(); ?>	
 		</section>
 	</div>
 
