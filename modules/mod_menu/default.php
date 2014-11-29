@@ -6,7 +6,7 @@
 			echo "<ul>";
 				foreach($array[$parent_id] as $items){
 					echo "<li>";
-					echo ' <a href="'.$items['aliasUrl'].'">'.$items['nombre_menu'].'</a>';
+					echo '<a href="'.$items['aliasUrl'].'" alt="'.$items['nombre_menu'].'" title="'.$items['nombre_menu'].'">'.$items['nombre_menu'].'</a>';
 					loop_array($array,$items['id_menu']);
 					echo "</li>";
 				}

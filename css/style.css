@@ -295,24 +295,25 @@ section#contenido #items{
 	margin: 0px auto;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
+	color: #6c6c6c;
 }
 
 .itemBloock .readMore{
-	width: 100px;
-	height: 40px;
-	margin: 10px;
+	width: 110px;
+	height: 30px;
+	margin: 10px auto;
 	background: #1a2933;
-	float: right;
 }
 
 .itemBloock .readMore a{
 	color: #ed8641;
-	font-family: arial;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
 	display: block;
 	text-align: center;
 	font-size: 14px;
 	text-decoration: none;
-	line-height: 40px;
+	line-height: 30px;
 }
 
 
@@ -334,17 +335,48 @@ section#contenido #items{
 }
 #categorias
 {
-	margin: 20px 0px 0px 0px;
+	margin: 40px 0px 0px 0px;
 	width: 100%;
 	border: 0px solid #f00;
 }
 
-.contcat
-{
-	width: 33%;
+.contcat{
+	width: 32%;
 	border: 0px solid #f00;
 	display: inline-block;
+	margin: 0px 10px 0px 0px;
 }
+
+.contcat h2.title{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+	color: #ed8641;
+	margin: 0px 0px 5px 0px;
+}
+
+.contcat .readMore{
+	background: #1a2933;
+height: 30px;
+margin: -4px 0px 0px 0px;
+float: right;
+width: 110px;
+}
+.contcat .readMore a{
+	display: block;
+	text-transform: uppercase;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	color: #ed8641;
+}
+
+.contcat a{
+	display: block;
+}
+
 .contcat img 
 {
 	width: 100%;
@@ -352,12 +384,12 @@ section#contenido #items{
 
 .moduletitle {
 	width: 100%;
-	border-bottom: 2px solid #1a2933;
+	border-bottom: 1px solid #1a2933;
 }
 
 section#productos h3{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 34px;
+	font-size: 28px;
 	font-weight: 400;
 	color: #1a2933;
 }
@@ -374,35 +406,60 @@ section#productos .prod{
 	display: inline-block;
 	margin-right: 6px;
 	vertical-align: top;
-	margin-top: 20px;
-	border: 0px solid #f00;
+	margin: 20px 0px 20px 0px;
 }
 
 section#productos .imagen img {
 	display: block;
 	height: auto;
+	width: 100%;
+	margin: 0px auto;
+	
 }
 
 section#productos .imagen{
-	width: 100%;
-	height: 345px;
+	width: 95%;
+	height: 320px;
 	overflow: hidden;
 	border: 0px solid #f00;
+	border: 1px solid #e8e8e8;
+	padding: 4px;
 }
+
+section#productos .readMore{
+	background: #1a2933;
+	height: 30px;
+	margin: 10px auto 0px auto;
+	width: 110px;
+	padding: 0px 5px;
+}
+section#productos .readMore  a{
+	display: block;
+	text-transform: uppercase;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	color: #ed8641;
+}
+
+
 
 section#productos  .descripcion{
 	width: 270px;
-	padding:20px 0px 20px 0px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 	min-height:50px;
 	font-size: 15px;
 	border: 0px solid #f00;
-	border-bottom: 1px solid #e8e8e8;
 }
 
 section#productos .descripcion p{
 	width: 85%;
 	display: block;
 	color: #ed8641;
+	margin: 0px auto;
 }
 
 
