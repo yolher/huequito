@@ -2,6 +2,7 @@
 	require_once("modules/mod_menu/default.php");
 	require_once("modules/mod_content_int/default.php");
 	require_once("modules/mod_ultimos/default.php");
+	require_once("modules/mod_category_list/default.php");
 		//-- trae el nombre de la pagina
 	$pagina = $_GET["id_menu"];
 ?>
@@ -84,32 +85,22 @@
 			<div id="contenidof">
 				<div class="contfoo">
 					<h1>SOBRE NOSOTROS</h1>
-					<img src="images/logo.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla.</p>
-					<div id="mas">
-					</div>
+					<a href="index.php">
+						<img src="images/logo.png" alt="">
+					</a>
+				</div>
+				
+				<div class="contfoo">
+					<h2>Menu Principal</h2>
+					<div class="menuFooter">
+						<?php displayMenus(); ?>
+					</div>					
 				</div>
 				<div class="contfoo">
 					<h2>CATEGORIAS</h2>
-					<ul>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-					</ul>
-				</div>
-				<div class="contfoo">
-					<h2>INFORMACION</h2>
-					<ul>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-					</ul>
+					<div class="menuFooter">
+						<?php displayCategoriesList(); ?>
+					</div>
 				</div>
 				<div class="contfoo">
 					<h2>SIGANOS</h2>

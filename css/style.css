@@ -123,6 +123,8 @@ nav ul li
 	border-radius: 4px;
 }
 
+nav ul li img{display: none;}
+
 nav ul li:hover{
 	background: #a3b9d1;
 	transition: 0.5s all;
@@ -524,7 +526,7 @@ footer
 	font-size: 14px;
 	color: #fff;
 	width: 70%;
-	margin-top: 62px;
+	margin-top: 30px;
 	font-weight: bold;
 	padding-bottom: 10px;
 	margin-left: 20px;
@@ -587,6 +589,21 @@ footer
 	width: 1124px;
 	margin: auto;
 }
+
+
+
+.menuFooter ul li img{margin: 0px 4px 0px 0px;}
+.menuFooter ul li a{
+	font-family: 'Open Sans', sans-serif;
+	color: #465c71;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.menuFooter ul li a:hover{
+	color: #fff;
+}
+
 
 .grid1{
 	width: 100%;
