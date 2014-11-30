@@ -4,8 +4,8 @@
 	require_once("modules/mod_productos/default.php");
 	require_once("modules/mod_category_front/default.php");
 	require_once("modules/mod_category_list/default.php");
+	require_once("modules/mod_redes/default.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,13 +40,8 @@
 						</a>
 					</div>
 					<div id="redes">
-						<ul>
-							<li><img src="images/contacto.png" alt=""></li>
-							<li><img src="images/correo.png" alt=""></li>
-							<li><img src="images/facebook.png" alt=""></li>
-						</ul>
-					</div>
-					
+						<?php displayRedes(); ?>
+					</div>					
 				</div>
 				<div class="grid2">
 					<div id="buscador">
@@ -114,10 +109,9 @@
 				</div>
 				<div class="contfoo">
 					<h2>SIGANOS</h2>
-					<ul id="redesfo">
-					<li><img src="images/facebookf.png" alt=""><p>Facebook</p></li>
-					<li><img src="images/twitterf.png" alt=""><p>Twitter</p></li>
-					</ul>
+					<div class="menuFooter">
+						<?php displayRedes(); ?>
+					</div>	
 				</div>
 				
 			</div>

@@ -3,6 +3,7 @@
 	require_once("modules/mod_content_int/default.php");
 	require_once("modules/mod_ultimos/default.php");
 	require_once("modules/mod_category_list/default.php");
+	require_once("modules/mod_redes/default.php");
 		//-- trae el nombre de la pagina
 	$pagina = $_GET["id_menu"];
 ?>
@@ -38,11 +39,7 @@
 						</a>
 					</div>
 					<div id="redes">
-						<ul>
-							<li><img src="images/contacto.png" alt=""></li>
-							<li><img src="images/correo.png" alt=""></li>
-							<li><img src="images/facebook.png" alt=""></li>
-						</ul>
+						<?php displayRedes(); ?>
 					</div>
 					
 				</div>
