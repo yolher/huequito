@@ -3,8 +3,9 @@
 	require_once("modules/mod_slide/default.php");
 	require_once("modules/mod_productos/default.php");
 	require_once("modules/mod_category_front/default.php");
+	require_once("modules/mod_category_list/default.php");
+	require_once("modules/mod_redes/default.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,14 +38,12 @@
 							<img src="images/menu.png">
 						</a>
 					</div>
-					<div id="redes">
-						<ul>
-							<li><img src="images/contacto.png" alt=""></li>
-							<li><img src="images/correo.png" alt=""></li>
-							<li><img src="images/facebook.png" alt=""></li>
-						</ul>
+					<div id="navMovil">
+						<?php displayMenus(); ?>
 					</div>
-					
+					<div id="redes">
+						<?php displayRedes(); ?>
+					</div>					
 				</div>
 				<div class="grid2">
 					<div id="buscador">
@@ -94,40 +93,29 @@
 	<footer>
 			<div id="contenidof">
 				<div class="contfoo">
-					<h1>SOBRE NOSOTROS</h1>
-					<img src="images/logo.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla.</p>
-					<div id="mas">
+					<!-- <h1>SOBRE NOSOTROS</h1> -->
+					<a href="index.php">
+						<img src="images/logo.png" alt="">
+					</a>
+				</div>
+				
+				<div class="contfoo menuF">
+					<h2>Menu Principal</h2>
+					<div class="menuFooter">
+						<?php displayMenus(); ?>
+					</div>					
+				</div>
+				<div class="contfoo categoriasF">
+					<h2>CATEGORIAS</h2>
+					<div class="menuFooter">
+						<?php displayCategoriesList(); ?>
 					</div>
 				</div>
-				<div class="contfoo">
-					<h2>CATEGORIAS</h2>
-					<ul>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-					</ul>
-				</div>
-				<div class="contfoo">
-					<h2>INFORMACION</h2>
-					<ul>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-						<li><img src="images/separador.png" alt=""><p>123123</p></li>
-					</ul>
-				</div>
-				<div class="contfoo">
+				<div class="contfoo redesF">
 					<h2>SIGANOS</h2>
-					<ul id="redesfo">
-					<li><img src="images/facebookf.png" alt=""><p>Facebook</p></li>
-					<li><img src="images/twitterf.png" alt=""><p>Twitter</p></li>
-					</ul>
+					<div class="menuFooter">
+						<?php displayRedes(); ?>
+					</div>	
 				</div>
 				
 			</div>

@@ -4,7 +4,7 @@
 		require_once('gestion/models/noticias_model.php');
 
         $datos=new noticias;
-        $productos=$datos->get_noticias_dif_cat(2,3,5);
+        $productos=$datos->get_noticias_dif_cat(2,3,5,16);
 
         for ($i=0; $i <count($productos) ; $i++) {
             $nombre = strtolower($productos[$i]["titulo_ent"]);
@@ -13,7 +13,7 @@
           <div class="prod">
                 <div class="descripcion">
                     <p>
-                    <?php echo substr(strip_tags($productos[$i]['titulo_ent']),0,60).'...'; ?>
+                    <?php echo substr(strip_tags($productos[$i]['titulo_ent']),0,40).'...'; ?>
                     </p>
                 </div>
                 <div class="imagen">
