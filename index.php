@@ -32,7 +32,6 @@
 		<div id="up">
 			<div id="varios">
 				<div class="grid2">
-					
 					<div id="Cmenu">
 						<a href="#" class="control" >
 							<img src="images/menu.png">
@@ -49,8 +48,10 @@
 				</div>
 				<div class="grid2">
 					<div id="buscador">
+						<form action="buscar.php" method="post">
 						<input id="into" type="text" placeholder="Buscar" class="hasPlaceholder">
 						<input type="button" id="boton" value="Buscar">
+						</form>
 					</div>
 				</div>
 				
