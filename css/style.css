@@ -3,7 +3,7 @@
 	margin:0px;
 }
 body{
-	background: url(../images/content-bg.gif) 160px 0px repeat-x;
+	background: #fff url(../images/content-bg.gif) 160px 0px repeat-x;
 }
 
 
@@ -38,6 +38,32 @@ header
 	display: block;
 	width: 100%;
 }
+
+#navMovil{
+	width: 100%;
+	background: rgba(25,36,48,1);
+	position: absolute;
+	z-index: 999;
+	top: 50px;
+	padding: 10px 0px;
+	display: none;
+}
+
+#navMovil ul li {
+	list-style: none;
+	min-height: 30px;
+	line-height: 30px;
+}
+
+#navMovil ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+#navMovil ul li a:hover{
+	color: #c1c1c1;
+}
+
 #redes
 {
 	width: 100%;
@@ -102,19 +128,20 @@ padding: 0px 0px 0px 5px;
 }
 nav
 {
-	width: 60%;
+	width: 76%;
 	height: 32px;
 
 	display: inline-block;
 	vertical-align: top;
 	margin: 40px 0px 0px 0px;
 	line-height: 32px;
-	float: right;
+	
 }
 nav ul 
 {
-	list-style: none;
-	width:100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
 }
 
 nav ul li 
@@ -189,7 +216,7 @@ section#contenido{
 	width: 74%;
 	display:inline-block;
 	vertical-align: top;
-	margin: 10px auto 0px auto;
+	margin: 10px auto 40px auto;
 }
 
 section#right{
@@ -200,7 +227,7 @@ section#right{
 	padding-bottom: 30px;
 	margin: 10px auto 0px auto;
 }
-#right h1
+section#right h1
 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
@@ -213,12 +240,9 @@ section#right{
 }
 #imgultimos
 {
-	width: 80%;
-	height: 250px;
+	width: 90%;
 	margin: auto;
-	margin-bottom: -25px;
 	margin-top: 30px;
-	overflow: hidden;
 	padding-top: 10px;
 	border-top: 1px dotted #fff;
 }
@@ -230,9 +254,9 @@ section#right{
 }
 #desultimos
 {
-	width: 80%;
-	margin: -44px auto 0px auto;
-	position: relative;
+	width: 90%;
+	text-align: center;
+	margin: 0px auto 0px auto;
 	z-index: 9999;
 	background-color: rgba(36,36,36,0.8);
 	border: 0px solid #f00;
@@ -243,7 +267,7 @@ section#right{
 	padding: 5px 0px 5px 0px;
 	margin-left: 10px;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	
 }
 .titlePage{
@@ -278,7 +302,7 @@ section#right{
 #mainItem .itemImage img{
 	display: block;
 	width: 90%;
-	margin: 0px auto;
+	margin: 0px auto 20px auto;
 	padding:  5px;
 	border: 1px solid #c1c1c1;
 }
@@ -350,7 +374,7 @@ section#contenido #items{
 
 #container
 {
-	width: 1124px;	
+	width: 1050px;	
 	margin: 0px auto;
 }
 #banner
@@ -437,15 +461,7 @@ section#productos .prod{
 	display: inline-block;
 	margin-right: 6px;
 	vertical-align: top;
-	margin: 20px 0px 20px 0px;
-}
-
-section#productos .imagen img {
-	display: block;
-	height: auto;
-	width: 100%;
-	margin: 0px auto;
-	
+	margin: 20px auto 20px auto;
 }
 
 section#productos .imagen{
@@ -456,6 +472,17 @@ section#productos .imagen{
 	border: 1px solid #e8e8e8;
 	padding: 4px;
 }
+
+
+section#productos .imagen img {
+	display: block;
+	height: auto;
+	width: 100%;
+	margin: 0px auto;
+	
+	
+}
+
 
 section#productos .readMore{
 	background: #1a2933;

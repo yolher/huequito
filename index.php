@@ -39,6 +39,9 @@
 							<img src="images/menu.png">
 						</a>
 					</div>
+					<div id="navMovil">
+						<?php displayMenus(); ?>
+					</div>
 					<div id="redes">
 						<?php displayRedes(); ?>
 					</div>					
@@ -89,25 +92,25 @@
 	<footer>
 			<div id="contenidof">
 				<div class="contfoo">
-					<h1>SOBRE NOSOTROS</h1>
+					<!-- <h1>SOBRE NOSOTROS</h1> -->
 					<a href="index.php">
 						<img src="images/logo.png" alt="">
 					</a>
 				</div>
 				
-				<div class="contfoo">
+				<div class="contfoo menuF">
 					<h2>Menu Principal</h2>
 					<div class="menuFooter">
 						<?php displayMenus(); ?>
 					</div>					
 				</div>
-				<div class="contfoo">
+				<div class="contfoo categoriasF">
 					<h2>CATEGORIAS</h2>
 					<div class="menuFooter">
 						<?php displayCategoriesList(); ?>
 					</div>
 				</div>
-				<div class="contfoo">
+				<div class="contfoo redesF">
 					<h2>SIGANOS</h2>
 					<div class="menuFooter">
 						<?php displayRedes(); ?>

@@ -6,27 +6,61 @@
 	#varios{width: 100%;}	
 	#contenidof{width: 100%;}
 	.prod{width: 23%;}
-	nav{float: none;}
+	nav{width: 60%;}
 
 }
 @media screen and (max-width: 1000px){
 	.contfoo{width: 48%;}
-	nav{width: 97%;
-		margin: auto;}
-}
-@media screen and (max-width: 850px){
+	nav{width: 100%;
+		display: block;
+	margin: 0px auto;}
+
+	nav ul{text-align: center;}
 	#logo{width: 100%;
+		}
+
+	section#productos .prod{
+		width: 30%;
+		text-align: center;
 	}
-	.contcat
-	{
-		width: 32%;
+}
+
+@media screen and (max-width: 1040px){
+	body.internal #container{width: 100%;}
+}
+
+@media screen and (max-width: 990px){
+
+	.contcat{
+		width: 31%;
 	}
+}
+
+@media screen and (max-width: 850px){
+	
 	.prod{width: 32%;}
 	#buscador{width: 90%;
 	margin: auto;}
+
+	section#right{ display: block;}
+	section#contenido{ width: 95%; display: block;}
+
+	section#right{ display: block; width: 100%;}
+	section#right h1{width: 95%; margin: 0px auto; padding: 10px 0px 0px 0px;} 
+	section#right .grid1{display: inline-block; width: 24%;} 
 }
+
+@media screen and (max-width: 750px){
+
+	section#productos{text-align: center;}
+	section#productos .prod{
+		width: 45%;
+	}
+	section#right .grid1{width: 45%;} 
+}
+
 @media screen and (max-width: 700px){
-	.prod{width: 48%;}
+	
 	#productos{width: 88%;
 		margin: auto;}
 		.contfoo{width: 90%;
@@ -38,41 +72,53 @@
 		#buscador{width: 70%;
 			float: none;
 			margin-top: 20px;}
+		
+	.categoriasF{display: none;}
+
+
 	}
+
+@media screen and (max-width: 675px){
+	nav ul li{
+		margin: 0px;
+	}
+}
+
+@media screen and (max-width: 575px){
+	.contcat{
+		display: block;
+		margin: auto;
+		width: 300px;
+	}
+
+	section#productos .prod{
+		width: 90%;
+		display: block;
+	}
+
+	section#right .grid1{width:95%; display: block; margin: 0px auto;} 
+
+	section#productos .descripcion{width: 100%;}
+	section#productos .descripcion p{
+		
+		font-size: 20px;
+	}
+	
+	.redesF ul li img,
+	.redesF ul li p{display: block; margin: 0px auto;}
+	.contfoo h2{width: 100%;}
+}
+
 
 @media screen and (max-width: 500px){
-	nav
-	{
-		z-index: 9999;
-
-	}
-	nav ul
-	{
-		background: #041019;
-		z-index: 9998;
-		position: absolute;
+	nav{
 		display: none;
-		margin-top: -110px;
 	}
-	nav ul li.menu
-	{
-		width: 100%;
-		height: 50px;
-		
-	}
-	nav ul li.menu ul
-	{
-		display: block;
-		background: none;
-	}
-	nav ul li.menu ul li
-	{
-		margin-left: -20px;
-
-	}
-	#redes
-	{
-		width: 50%;
+	
+	#lnb{padding: 0px;}
+	
+	#redes{
+		width: 60%;
 		margin: auto;
 	}
 	#buscador
@@ -91,3 +137,18 @@
 		margin-left: 10px;
 	}
 }
+
+@media screen and (max-width: 400px){
+	.contcat{
+		width: 90%;
+		margin: 30px auto;
+	}
+
+	#mainItem .itemImage{
+		width: 95%;
+		margin: 0px auto;
+		float: none;
+	}
+}
+
+@media screen and (max-width: 320px){}
