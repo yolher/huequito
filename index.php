@@ -5,6 +5,7 @@
 	require_once("modules/mod_category_front/default.php");
 	require_once("modules/mod_category_list/default.php");
 	require_once("modules/mod_redes/default.php");
+	require_once("modules/mod_buscador/default.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +17,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mediaQueries.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin' rel='stylesheet' type='text/css'> 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin' rel='stylesheet' type='text/css'>
 	<link id="page_favicon" href="favicon.ico" rel="icon" type="image/x-icon" />
 	<link rel="stylesheet" href="css/normalize.css">
 	<script src="js/jquery-1.7.2.min.js"></script>
@@ -47,10 +48,11 @@
 				</div>
 				<div class="grid2">
 					<div id="buscador">
-						<form action="buscar.php" method="post">
-						<input id="into" type="text" placeholder="Buscar" class="hasPlaceholder">
-						<input type="button" id="boton" value="Buscar">
-						</form>
+						<?php displaybuscar(); ?>
+					</div>
+					<div id="resultSearch">
+						<div class="close">Cerrar</div>
+						<ul></ul>
 					</div>
 				</div>
 				
@@ -71,11 +73,9 @@
 	</header>
 
 	<div id="container">	
-
 		<section id="banner">    		
-      		<?php displayslide(); ?>    			
+    		<?php displayslide(); ?>    			
 		</section>
-			
 
 		<section id="categorias">
 			<?php displayCategoriesFront(); ?>

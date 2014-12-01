@@ -37,6 +37,10 @@ x(document).on("ready",function(){
       });
     });
  
-		
+		x('li:first-child').addClass("active");
+
+    //================ acciones para el buscador ===========
+
+   
 
 });

@@ -42,6 +42,7 @@
 	#buscador{width: 90%;
 	margin: auto;}
 
+	#resultSearch{top: 100px; margin: 0px 0px 0px 10px;}
 	section#right{ display: block;}
 	section#contenido{ width: 95%; display: block;}
 
@@ -117,10 +118,6 @@
 	#redes{
 		width: 60%;
 		margin: auto;
-	}
-	#buscador
-	{
-		width: 90%;
 	}
 	.contcat
 	{
