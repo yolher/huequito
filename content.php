@@ -4,6 +4,7 @@
 	require_once("modules/mod_ultimos/default.php");
 	require_once("modules/mod_category_list/default.php");
 	require_once("modules/mod_redes/default.php");
+	require_once("modules/mod_buscador/default.php");
 		//-- trae el nombre de la pagina
 	$pagina = $_GET["id_menu"];
 ?>
@@ -48,8 +49,11 @@
 				</div>
 				<div class="grid2">
 					<div id="buscador">
-						<input id="into" type="text" placeholder="Buscar" class="hasPlaceholder">
-						<input type="button" id="boton" value="Buscar">
+						<?php displaybuscar(); ?>
+					</div>
+					<div id="resultSearch">
+						<div class="close">Cerrar</div>
+						<ul></ul>
 					</div>
 				</div>
 				

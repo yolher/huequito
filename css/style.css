@@ -108,7 +108,62 @@ header
 {
 	float: right;
 	width: 70%;
+	font-size: 14px;
 }
+
+#resultSearch .close{
+	width: 100%;
+	text-align: right;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+#resultSearch{
+	width: 290px;
+	background: #fff;
+	border: 1px solid #c1c1c1;
+	position: absolute;
+	top: 41px;
+	margin: 0px 0px 0px 108px;
+	z-index: 999;
+	padding: 10px;
+	display: none;
+}
+
+#resultSearch ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+#resultSearch ul li {
+	border-bottom: 1px dotted #c1c1c1;		
+	list-style: none;
+
+}
+
+#resultSearch ul li .tituloSearch a{
+	color: #1a2933;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+#resultSearch ul li p{
+	font-size: 14px;
+	color: #8a8a8a;
+}
+
+
+#resultSearch ul li .readMore{width: 100%;}
+
+#resultSearch ul li .readMore a{
+	text-align: right;
+	text-decoration: none;
+	color: #ed8641;
+	font-size: 14px;
+	display: block;
+	padding: 5px 0px 5px 0px;
+}
+
 #into
 {
 	width: 73%;
@@ -116,7 +171,7 @@ height: 30px;
 border: none;
 padding: 0px 0px 0px 5px;
 }
-#boton
+button#buscar
 {
 	width: 23%;
 	height: 30px;
