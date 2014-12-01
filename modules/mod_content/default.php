@@ -14,8 +14,12 @@
 				$nombre = strtolower($item[$i]["titulo_ent"]);
 				$nombreUrl = str_replace(" ", "-", $nombre);
 				echo '<div class="itemBloock">
-						<div class="titulo"><a href="'.$nombreUrl.'-content-'.$item[$i]["id_entry"].'.html">'.$item[$i]["titulo_ent"].'</a></div>
-						<div class="image"><img src="server/php/files/'.$item[$i]["image_ent"].'"></div>
+						<div class="titulo"><a href="'.$nombreUrl.'-content-'.$item[$i]["id_entry"].'.html">'.substr($item[$i]["titulo_ent"],0,50).'</a></div>
+						<div class="image">
+							<a href="'.$nombreUrl.'-content-'.$item[$i]["id_entry"].'.html">
+								<img src="server/php/files/'.$item[$i]["image_ent"].'">
+							</a>
+						</div>
 						<div class="descripcion">'.substr($item[$i]["desc_ent"],0,80).'...</div>
 						<div class="readMore"><a href="'.$nombreUrl.'-content-'.$item[$i]["id_entry"].'.html">Leer Más</a></div>
 				</div>';

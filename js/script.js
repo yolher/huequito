@@ -22,11 +22,18 @@ x(document).on("ready",function(){
         width: 940,
         height: 400,
         play: {
-          active: true,
+          active: false,
           auto: true,
           interval: 4000,
           swap: true
-        }
+        },
+        navigation: {
+      		active: false,        
+      	},
+      	pagination: {
+      		active: true,
+      		effect: "fade"
+      	}
       });
     });
  

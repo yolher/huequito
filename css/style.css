@@ -380,8 +380,8 @@ section#contenido #items{
 #banner
 {
 	width: 100%;
-	margin: 0px 0px 0px 0px;
-	border: 0px solid #f00;
+	margin: 10px 0px 30px 0px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 #slides
 {
@@ -390,16 +390,16 @@ section#contenido #items{
 }
 #categorias
 {
-	margin: 40px 0px 0px 0px;
+	margin: 10px 0px 0px 0px;
 	width: 100%;
 	border: 0px solid #f00;
 }
 
 .contcat{
-	width: 32%;
+	width: 33%;
 	border: 0px solid #f00;
 	display: inline-block;
-	margin: 0px 10px 0px 0px;
+	margin: 0px auto;
 }
 
 .contcat h2.title{
@@ -457,7 +457,7 @@ section#productos{
 }
 
 section#productos .prod{
-	width: 24%;
+	width: 24.6%;
 	display: inline-block;
 	margin-right: 6px;
 	vertical-align: top;
@@ -471,6 +471,12 @@ section#productos .imagen{
 	border: 0px solid #f00;
 	border: 1px solid #e8e8e8;
 	padding: 4px;
+	transition: 0.1s all;
+}
+
+section#productos .imagen:hover{
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+	transition: 0.5s all;
 }
 
 
