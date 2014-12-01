@@ -4,7 +4,7 @@
 		require_once('gestion/models/noticias_model.php');
 
         $datos=new noticias;
-        $productos=$datos->get_noticias_dif_cat(2,3,5,4);      
+        $productos=$datos->get_noticias_dif_cat(2,3,5,3);      
         
 
         for ($i=0; $i < count($productos); $i++) {

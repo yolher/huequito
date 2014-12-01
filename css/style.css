@@ -43,7 +43,7 @@ header
 	width: 100%;
 	background: rgba(25,36,48,1);
 	position: absolute;
-	z-index: 999;
+	z-index: 99999;
 	top: 50px;
 	padding: 10px 0px;
 	display: none;
@@ -217,6 +217,7 @@ section#contenido{
 	display:inline-block;
 	vertical-align: top;
 	margin: 10px auto 40px auto;
+	min-height: 600px;
 }
 
 section#right{
