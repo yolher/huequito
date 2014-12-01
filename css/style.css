@@ -345,6 +345,18 @@ section#right h1
 	margin: 20px auto;
 }
 
+#mainItem ul{
+	float: left;
+}
+
+
+#mainItem ul li{
+	font-family: 'Open Sans', sans-serif;
+	color: #7f7f7f;
+	line-height: 22px;
+	font-size: 16px;
+}
+
 #mainItem .itemImage{
 	float: left;
 	width: 350px;
@@ -734,3 +746,5 @@ footer
 	display: inline-block;
 	vertical-align: top;
 }
+
+.categoriasF ul li:first-child{display: none;}

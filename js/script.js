@@ -38,6 +38,7 @@ x(document).on("ready",function(){
     });
  
 		x('li:first-child').addClass("active");
+    x('nav ul li ul li:first-child').removeClass("active");
 
     //================ acciones para el buscador ===========
 
