@@ -70,11 +70,9 @@
 	</header>
 
 	<div id="container">	
-
 		<section id="banner">    		
-      		<?php displayslide(); ?>    			
+    		<?php displayslide(); ?>    			
 		</section>
-			
 
 		<section id="categorias">
 			<?php displayCategoriesFront(); ?>

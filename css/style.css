@@ -156,11 +156,13 @@ nav ul li
 
 nav ul li img{display: none;}
 
+nav ul li.active,
 nav ul li:hover{
 	background: #a3b9d1;
 	transition: 0.5s all;
 }
 
+nav ul li.active a,
 nav ul li:hover a{
 	color: #000;
 }
@@ -518,6 +520,7 @@ section#productos  .descripcion{
 	min-height:50px;
 	font-size: 15px;
 	border: 0px solid #f00;
+	text-transform: uppercase;
 }
 
 section#productos .descripcion p{

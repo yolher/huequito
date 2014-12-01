@@ -5,7 +5,7 @@
 		if(!empty($array[$parent_id])){
 			echo "<ul>";
 				foreach($array[$parent_id] as $items){
-					echo "<li><img src='images/separador.png'>";
+					echo "<li class='itemId-".$items['id_menu']."'><img src='images/separador.png'>";
 					echo '<a href="'.$items['aliasUrl'].'" alt="'.$items['nombre_menu'].'" title="'.$items['nombre_menu'].'">'.$items['nombre_menu'].'</a>';
 					loop_array($array,$items['id_menu']);
 					echo "</li>";
