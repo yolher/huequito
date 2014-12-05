@@ -37,7 +37,10 @@
 }
 
 @media screen and (max-width: 850px){
-	
+	#mainItem ul{float: none;}
+	#galerias ul{float: none;}
+	#galerias {float: none;}
+	#mainItem .itemImage{float: none;}
 	
 	#buscador{width: 90%;
 	margin: auto;}
@@ -60,6 +63,8 @@
 		width: 45%;
 	}
 	section#right .grid1{width: 45%;} 
+
+	#galerias ul li{width: 46%;}
 }
 
 @media screen and (max-width: 700px){
@@ -152,6 +157,10 @@
 		margin: 0px auto;
 		float: none;
 	}
+
+	#galerias ul li{width: 90%; margin: 5px auto;display: block;}
+
+	#buscador{width: 90%;}
 }
 
 @media screen and (max-width: 320px){}
