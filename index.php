@@ -1,7 +1,7 @@
 <?php 
 	require_once("modules/mod_menu/default.php");
 	require_once("modules/mod_slide/default.php");
-	require_once("modules/mod_productos/default.php");
+	require_once("modules/mod_destacados/default.php");
 	require_once("modules/mod_category_front/default.php");
 	require_once("modules/mod_category_list/default.php");
 	require_once("modules/mod_redes/default.php");
@@ -83,9 +83,9 @@
 
 		<section id="productos">
 			<div class="moduletitle">
-				<h3>Ùltimos Productos</h3>
+				<h3>Prodúctos Destacados</h3>
 			</div>
-			<?php displayProductos(); ?>	
+			<?php displayProductosDestacados(); ?>	
 		</section>
 		
 	</div>
