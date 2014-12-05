@@ -1,6 +1,6 @@
 RewriteEngine On
 
-#ErrorDocument 404 http://www.santacruzfincaraiz.com/sorry.php
+ErrorDocument 404 http://localhost/huequito/sorry.php
 
 RewriteRule ^([a-zA-Z0-9_-]+)$ entrada.php?id=$1 [last]
 #RewriteRule ^.*/\$ entrada.php?id=$1 [L]
