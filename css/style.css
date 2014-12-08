@@ -482,6 +482,32 @@ section#contenido #items{
 	width: 100%;
 	border: 0px solid;
 }
+#slides img.slideImage{
+	width: 100%;
+}
+
+#slides .infoSlide{
+	background: rgba(0,0,0,0.5);
+	display: block;
+	position:absolute;
+	bottom: 10px;
+	padding: 10px;
+}
+
+#slides .slideTitulo a{
+	color: #fff!important; 
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#slides .slideDesc a{
+	color: #fff!important;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	font-size: 14px;
+}
+
 #categorias
 {
 	margin: 10px 0px 0px 0px;
