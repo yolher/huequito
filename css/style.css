@@ -494,6 +494,7 @@ section#contenido #items{
 	padding: 10px;
 }
 
+#slides .slideTitulo p,
 #slides .slideTitulo a{
 	color: #fff!important; 
 	font-family: 'Open Sans', sans-serif;
@@ -501,6 +502,7 @@ section#contenido #items{
 	text-decoration: none;
 }
 
+#slides .slideDesc p,
 #slides .slideDesc a{
 	color: #fff!important;
 	font-family: 'Open Sans', sans-serif;

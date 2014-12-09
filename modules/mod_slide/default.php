@@ -13,20 +13,31 @@
       $nombreUrl = str_replace(" ", "-", $nombre);
 
 
-      $foto = "server/php/files/".$getSlide[$i]["image_sl"];    
+      $foto = "server/php/files/".$getSlide[$i]["image_sl"];
+      $enlace =  $nombreUrl.'-content-'.$getSlide[$i]["enlace_sl"].'.html';
       ?>
       <div>
         <img src="<?php echo $foto; ?>" class="slideImage">
         <div class="infoSlide">
           <div class="slideTitulo">
-            <a href="<?php echo $nombreUrl.'-content-'.$getSlide[$i]["enlace_sl"].'.html'; ?>">
-              <?php echo $getSlide[$i]["name_sl"]; ?>
-            </a>    
+            <?php if ($getSlide[$i]["enlace_sl"] != '') { ?>
+              <a href="<?php echo $enlace; ?>">
+                <?php echo $getSlide[$i]["name_sl"]; ?>
+              </a>
+            <?php }else{ ?>
+              <p><?php echo $getSlide[$i]["name_sl"]; ?></p>
+            <?php } ?>
+                
           </div>        
           <div class="slideDesc">
-            <a href="<?php echo $nombreUrl.'-content-'.$getSlide[$i]["enlace_sl"].'.html'; ?>">
+            <?php if ($getSlide[$i]["enlace_sl"] != '') { ?>
+            <a href="<?php echo $enlace; ?>">
               <?php echo $getSlide[$i]["desc_sl"]; ?>
-            </a>    
+            </a>
+            <?php }else{ ?>
+              <p><?php echo $getSlide[$i]["desc_sl"]; ?></p>
+            <?php } ?>
+
           </div>
         </div>
       </div>
