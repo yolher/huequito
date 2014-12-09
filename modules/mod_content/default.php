@@ -8,7 +8,7 @@
 
 		$menus = $datos->all_like_menus($id);
 
-		function content($item){
+		function contentCategory($item){
 			//echo count($item);
 			for ($i=0; $i < count($item); $i++) { 
 				$nombre = strtolower($item[$i]["titulo_ent"]);
@@ -25,6 +25,18 @@
 				</div>';
 			}
 		}
+
+		function contentAlone($item){
+
+			echo '<div id="mainItem">
+					<div class="itemImage">						
+						<img src="server/php/files/'.$item[0]["image_ent"].'">						
+					</div>
+					<div class="desc">'.$item[0]["desc_ent"].'</div>
+					
+			</div>';
+			
+		}
 		
 		$id_menu = $menus[0]["id_tipo"];
 		$tipo = $menus[0]["tipo"];
@@ -32,12 +44,12 @@
 		if ($tipo == "categoria") {
 			$item = $noticias->get_noticias_cat($id_menu);
 			echo '<div id="categories">';
-			content($item);
+			contentCategory($item);
 			echo '</div>';
 		}else if($tipo == "item"){
 			$item = $noticias->get_noticias_id($id_menu);
 			echo '<div id="items">';
-			content($item);
+			contentAlone($item);
 			echo '</div>';
 		}
 
